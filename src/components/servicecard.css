@@ -1,0 +1,123 @@
+
+/* Service Card styles */
+.service-card {
+    background-color: #77c0d3;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  
+  .icon-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .service-features {
+    margin-bottom: 25px;
+    flex-grow: 1;
+  }
+  
+  .service-features li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .service-features li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4169e1;
+    font-weight: bold;
+  }
+  
+  .enquiry-button {
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+    margin-top: auto;
+  }
+  
+  .enquiry-button:hover {
+    background-color: #3050c0;
+  }
+  
+  .arrow-icon {
+    font-size: 14px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .services-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .service-card {
+      padding: 20px;
+    }
+  
+    .service-title {
+      font-size: 1.2rem;
+    }
+  }
+  
