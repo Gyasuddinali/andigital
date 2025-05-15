@@ -23,10 +23,11 @@ import PPCManagement from "./components/services/PPCManagement";
 import AllPage from './components/AllPage';
 
 import Footer from './components/Footer';
+import SeoPage from './components/SeoPage';
 function App() {
   return (
     <div className="App">
-    
+    <SeoPage></SeoPage>
     <Master></Master>
 
 <Routes>
