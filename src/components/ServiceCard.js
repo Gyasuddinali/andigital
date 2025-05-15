@@ -2,9 +2,9 @@
 import { serviceData } from './serviceData'; 
 const ServiceCard = () => {
   return (
-    <div className="container-fluid p-5 my-5" >
-      <h1 className=" fw-bold text-center text-white bg-danger mb-5">Our Service</h1>
-      <div className="row g-4 bg-info">
+    <div className="container-fluid p-5 my-5 bg-warning" >
+      <h1 className=" fw-bold text-center text-primary">Our Service</h1>
+      <div className="row g-4">
         {serviceData.map((service, index) => (
           <div className="col-md-6 col-lg-4" key={index}>
             <div className="card h-100 shadow">
