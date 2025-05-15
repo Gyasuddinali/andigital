@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const T = () => {
   return (
-    <div className="container my-5">
-      <h2 className="mb-4 text-center display-5 fw-bold text-center text-primary mb-4">Digital Marketing Services in Delhi</h2>
-      <p className="mb-4 text-center">
+    <div className="container-fluid bg-info my-5">
+      <h2 className="mb-4 text-center display-5 fw-bold bg-danger container-fluid text-center text-white mb-4">Digital Marketing Services in Delhi</h2>
+      <p className="mb-4 text-center text-white">
         The team of experienced professionals is well-versed in the latest trends and techniques in the digital marketing landscape. Whether you are a startup, small business, or enterprise, they have tailored solutions to meet your specific requirements.
       </p>
 

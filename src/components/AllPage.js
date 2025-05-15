@@ -9,14 +9,16 @@ import whyus from "../images/wcus.webp"
 
 export default function AllPage() {
   return (
-    <div>
+    <div className="container">
         <ServiceCard></ServiceCard>
         <T></T>
 
-<h2 className='text-center mt-4   fw-bold text-primary'>Digital Marketing & SEO</h2>
-<p className="m-5">Are you extensively searching for the best facilitators of Digital Marketing Course and Advance Digital Marketing Course ? If yes, then your hunt for the same stops right at Pankaj Kumar SEO Expert. He is the most eminent Digital Marketing expert that you would ever attain. His training modules are designed in such a way that would impart rightful skill set when it comes to giving you a bright career in Digital Marketing.
+<h2 className='text-center mt-4   fw-bold text-white bg-danger'>Digital Marketing & SEO</h2>
+<div className="container-fluid">
+<p className="container-fluid  bg-info">Are you extensively searching for the best facilitators of Digital Marketing Course and Advance Digital Marketing Course ? If yes, then your hunt for the same stops right at Pankaj Kumar SEO Expert. He is the most eminent Digital Marketing expert that you would ever attain. His training modules are designed in such a way that would impart rightful skill set when it comes to giving you a bright career in Digital Marketing.
 
 Digital marketing has become a buzzword recently. As the internet expanded the importance of digital marketing evolved. Every business today relies on these new advanced methodologies to boost their revenue and why they wouldn’t; an average person spends more than 3 hours on the internet. Digital marketing is not like traditional marketing; its goal is not only to generate revenue but attract an audience so that your product always stays in their mind. Digital marketing has changed and now has several domains and avenues, which has increased the complexity of this industry. Mastering digital marketing can be challenging because there are no hard and fast rules. It requires you to have creative and innovative ideas to penetrate markets. Digital Marketing Institute In Delhi 2025</p>
+</div>
 <div className="container">
 <h1 className="text-center fw-bold text-primary">
 Why Choose Us</h1>
@@ -33,7 +35,7 @@ Why Choose Us</h1>
               className="img-fluid rounded-circle float-start mb-5"
               src={whyus}
               alt="profile"
-              style={{ maxWidth: '490px', height: 'auto' }}
+              style={{ maxWidth: '400px', height: 'auto' }}
             />
             </div>
       <div className="col-md-7">

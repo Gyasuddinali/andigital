@@ -22,6 +22,7 @@ import ContentMarketing from "./components/services/ContentMarketing";
 import PPCManagement from "./components/services/PPCManagement";
 import AllPage from './components/AllPage';
 
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -49,7 +50,7 @@ function App() {
 <Route path="/services/ppc" element={<PPCManagement />} />
 </Routes>
 
-
+<Footer></Footer>
 
     
     </div>
