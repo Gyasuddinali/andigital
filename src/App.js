@@ -24,10 +24,13 @@ import AllPage from './components/AllPage';
 
 import Footer from './components/Footer';
 import SeoPage from './components/SeoPage';
+import DevelopmentPage from './components/DevelopmentPage';
+import BlogPage from './components/BlogPage';
+import ContactUs from './components/ContactUs';
 function App() {
   return (
     <div className="App">
-    <SeoPage></SeoPage>
+   <SeoPage></SeoPage>
     <Master></Master>
 
 <Routes>
@@ -49,10 +52,17 @@ function App() {
 <Route path="/services/web-development" element={<WebDevelopment />} />
 <Route path="/services/content-marketing" element={<ContentMarketing />} />
 <Route path="/services/ppc" element={<PPCManagement />} />
+
+
+<Route path="/blog" element={<BlogPage></BlogPage>}/>
+<Route path="/contactus" element={<ContactUs></ContactUs>} />
+<Route path="/development" element={<DevelopmentPage></DevelopmentPage>} />
+<Route path="/seopage" element={<SeoPage></SeoPage>} />
+
 </Routes>
 
 <Footer></Footer>
-
+ 
     
     </div>
   );

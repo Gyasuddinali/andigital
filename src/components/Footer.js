@@ -33,8 +33,8 @@ const Footer = () => {
            <p>Hours:24hours</p>
 
 
-          <p>Email: <a href="mailto:info@devseo.com" style={styles.link}>enquiry@amtechdigital.com</a></p>
-          <p>Phone: <a href="tel:+1234567890" style={styles.link}>+9182076 92087</a></p>
+          <p>Email: <a href="mailto:amdigital@seo.com" style={styles.link}>enquiry@amdigital.com</a></p>
+          <p>Phone: <a href="tel:+918207692087" style={styles.link}>+9182076 92087</a></p>
         </div>
       </div>
 
