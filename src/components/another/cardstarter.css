@@ -1,0 +1,205 @@
+/* Banner Styles */
+.starter-package-banner {
+  background: linear-gradient(to right, #32d1bc, #26e48b);
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.banner-content {
+  padding: 2.5rem;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.included-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Features List */
+.features-container {
+  margin-top: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.1rem;
+}
+
+.check-icon {
+  color: #ffcc00;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+}
+
+/* Price Section */
+.price-section {
+  background: rgba(209, 50, 50, 0.3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.price {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ff9900;
+  line-height: 1;
+}
+
+.payment-terms {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.order-btn {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #e68a00;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Contact Options */
+.contact-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #d13232;
+}
+
+.phone-circle {
+  background-color: #d13232;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 0.8rem;
+}
+
+.chat-btn {
+  background-color: #d13232;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: #b82a2a;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .price-section {
+    padding: 2rem;
+  }
+
+  .banner-title {
+    font-size: 2.8rem;
+  }
+
+  .price {
+    font-size: 4rem;
+  }
+
+  .payment-terms {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner-content {
+    padding: 2rem;
+  }
+
+  .feature-list li {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .contact-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .features-container .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .price-section {
+    padding: 1.5rem;
+  }
+
+  .price {
+    font-size: 3.5rem;
+  }
+
+  .payment-terms {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+}

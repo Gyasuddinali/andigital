@@ -97,7 +97,7 @@ const NavBar = () => {
               onMouseEnter={() => setActiveDropdown(item.id)}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              {item.dropdown.length > 0 ? (
+              {/* {item.dropdown.length > 0 ? (
                 <div className={`nav-link ${activeDropdown === item.id ? "active" : ""}`}>
                   {item.title}
                   <span className="dropdown-arrow">▼</span>
@@ -106,7 +106,23 @@ const NavBar = () => {
                 <Link to={item.path} className="nav-link">
                   {item.title}
                 </Link>
-              )}
+              )} */}
+
+
+
+{item.dropdown.length > 0 ? (
+  <Link to={item.path || "#"} className={`nav-link ${activeDropdown === item.id ? "active" : ""}`}>
+    {item.title}
+    <span className="dropdown-arrow">▼</span>
+  </Link>
+) : (
+  <Link to={item.path} className="nav-link">
+    {item.title}
+  </Link>
+)}
+
+
+              
 
               {item.dropdown.length > 0 && (
                 <div className={`dropdown-menu ${activeDropdown === item.id ? "active" : ""}`}>

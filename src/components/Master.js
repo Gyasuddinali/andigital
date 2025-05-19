@@ -1,13 +1,10 @@
 
 import { useState } from "react"
-import ServiceCard from "./ServiceCard"
-import { serviceData } from "./serviceData"
-import OnPageSEO from "./seo/OnPageSEO"
-import OffPageSEO from "./seo/OffPageSEO";
-import TechnicalSEO from "./seo/TechnicalSEO";
-import LocalSEO from "./seo/LocalSEO";
-import T from "./T"
 
+ 
+ import SeoCompare from "./another/SeoCompare";
+import PriceTable from "./another/PriceTable";
+import CardForStarter from "./another/CardForStarter";
 import {
   FaFacebookF,
   FaYoutube,
@@ -178,7 +175,10 @@ function Master() {
       </div>
 {/* <AllPage></AllPage> */}
 
- 
+<SeoCompare></SeoCompare>
+
+<PriceTable></PriceTable>
+ <CardForStarter></CardForStarter>
   </div>
   )
 }

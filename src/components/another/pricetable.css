@@ -1,0 +1,150 @@
+/* Billing Tabs */
+.billing-tab {
+  flex: 1;
+  padding: 15px 0;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.billing-tab:first-child {
+  background-color: #f47321;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.billing-tab:nth-child(2) {
+  background-color: #b22222;
+}
+
+.billing-tab:last-child {
+  background-color: #8b0000;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.billing-tab:hover {
+  opacity: 0.9;
+}
+
+.billing-tab.active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pricing Cards */
+.pricing-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #3c22b2;
+  margin-bottom: 0;
+}
+
+.price {
+  color: #b22222;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+/* Scrollable Content */
+.scrollable-content {
+  height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #b22222;
+  border-radius: 10px;
+}
+
+/* Feature Sections */
+.feature-section {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.feature-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 1px;
+  background: #eee;
+}
+
+.feature-title {
+  color: #22b23a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.feature-list {
+  list-style: none;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: #b22222;
+  border-radius: 50%;
+}
+
+/* Order Button */
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding-bottom: 25px;
+}
+
+.btn-order {
+  background-color: #21b1f4;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-order:hover {
+  background-color: #e05f00;
+  transform: scale(1.05);
+  color: white;
+}

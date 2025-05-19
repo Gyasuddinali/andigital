@@ -30,7 +30,7 @@ import ContactUs from './components/ContactUs';
 function App() {
   return (
     <div className="App">
-   <SeoPage></SeoPage>
+   
     <Master></Master>
 
 <Routes>
