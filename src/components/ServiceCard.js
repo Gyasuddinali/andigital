@@ -1,8 +1,14 @@
 
 import { serviceData } from './serviceData'; 
 const ServiceCard = () => {
+     const bgStyle = {
+    background: 'linear-gradient(135deg, rgba(111, 0, 255, 0.99), rgb(26, 24, 24), rgb(0, 0, 0))',
+    color: 'white',
+    
+  };
+
   return (
-    <div className="container-fluid p-5 my-5 bg-warning" >
+    <div className="container-fluid p-5 my-5 bg-warning" style={bgStyle}>
       <h1 className=" fw-bold text-center text-primary">Our Service</h1>
       <div className="row g-4">
         {serviceData.map((service, index) => (

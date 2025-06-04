@@ -2,9 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const T = () => {
+     const bgStyle = {
+    background: 'linear-gradient(135deg, rgba(111, 0, 255, 0.99), rgb(26, 24, 24), rgb(0, 0, 0))',
+    color: 'white',
+    
+  };
   return (
-    <div className="container-fluid bg-info my-5">
-      <h2 className="mb-4 text-center display-5 fw-bold bg-danger container-fluid text-center text-white mb-4">Digital Marketing Services in Delhi</h2>
+    <div className="container-fluid bg-info my-5" style={bgStyle}>
+      <h2 className="mb-4 text-center display-5 fw-bold container-fluid text-center text-white mb-4">Digital Marketing Services in Delhi</h2>
       <p className="mb-4 text-center text-white">
         The team of experienced professionals is well-versed in the latest trends and techniques in the digital marketing landscape. Whether you are a startup, small business, or enterprise, they have tailored solutions to meet your specific requirements.
       </p>

@@ -32,7 +32,7 @@ function App() {
     <div className="App">
    
     <Master></Master>
-
+  
 <Routes>
  <Route path='/' element={<AllPage></AllPage>}></Route> 
   <Route path="/service" element={<Service></Service>} />

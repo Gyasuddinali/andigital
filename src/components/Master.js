@@ -2,9 +2,7 @@
 import { useState } from "react"
 
  
- import SeoCompare from "./another/SeoCompare";
-import PriceTable from "./another/PriceTable";
-import CardForStarter from "./another/CardForStarter";
+
 import {
   FaFacebookF,
   FaYoutube,
@@ -110,7 +108,7 @@ function Master() {
         <section className="hero">
           <div className="container">
             <div className="hero-content">
-              <h2>AMTECH DISITAL SOLUTION</h2>
+              <h2>AMTECH DIGITAL SOLUTION</h2>
               <h1>Digital Marketing Course In Delhi, India</h1>
               <div className="course-features">
                 <p>
@@ -175,10 +173,7 @@ function Master() {
       </div>
 {/* <AllPage></AllPage> */}
 
-<SeoCompare></SeoCompare>
 
-<PriceTable></PriceTable>
- <CardForStarter></CardForStarter>
   </div>
   )
 }

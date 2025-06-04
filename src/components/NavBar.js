@@ -7,25 +7,31 @@ const NavBar = () => {
   const dropdownRef = useRef(null);
 
   const navItems = [
+     {
+      id: "home",
+      title: "HOME",
+      dropdown: [],
+      path: "/",
+    },
     {
       id: "seo",
       title: "SEO",
       path: "/seopage",
       dropdown: [
-        { label: "On-Page SEO", path: "/seo/on-page" },
-        { label: "Off-Page SEO", path: "/seo/off-page" },
-        { label: "Technical SEO", path: "/seo/technical" },
-        { label: "Local SEO", path: "/seo/local" },
+        // { label: "On-Page SEO", path: "/seo/on-page" },
+        // { label: "Off-Page SEO", path: "/seo/off-page" },
+        // { label: "Technical SEO", path: "/seo/technical" },
+        // { label: "Local SEO", path: "/seo/local" },
       ],
     },
     {
       id: "smo",
       title: "SMO",
       dropdown: [
-        { label: "Facebook Marketing", path: "/smo/facebook" },
-        { label: "Instagram Marketing", path: "/smo/instagram" },
-        { label: "Twitter Marketing", path: "/smo/twitter" },
-        { label: "LinkedIn Marketing", path: "/smo/linkedin" },
+        // { label: "Facebook Marketing", path: "/smo/facebook" },
+        // { label: "Instagram Marketing", path: "/smo/instagram" },
+        // { label: "Twitter Marketing", path: "/smo/twitter" },
+        // { label: "LinkedIn Marketing", path: "/smo/linkedin" },
       ],
     },
     {
@@ -56,6 +62,8 @@ const NavBar = () => {
       dropdown: [],
       path: "/contactus",
     },
+   
+
   ];
 
   useEffect(() => {
@@ -97,18 +105,7 @@ const NavBar = () => {
               onMouseEnter={() => setActiveDropdown(item.id)}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              {/* {item.dropdown.length > 0 ? (
-                <div className={`nav-link ${activeDropdown === item.id ? "active" : ""}`}>
-                  {item.title}
-                  <span className="dropdown-arrow">▼</span>
-                </div>
-              ) : (
-                <Link to={item.path} className="nav-link">
-                  {item.title}
-                </Link>
-              )} */}
-
-
+             
 
 {item.dropdown.length > 0 ? (
   <Link to={item.path || "#"} className={`nav-link ${activeDropdown === item.id ? "active" : ""}`}>
